@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            height: 100vh;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            /*font-size: 25px;*/
+        }
+        .container{
+            width: 200px;
+            height: 500px;
+            perspective: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cube{
+            width: 200px;
+            height: 200px;
+            display: flex;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: rotatecube 5s infinite linear;
+        }
+
+        .face{
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: inset 0 0 20px rgba(249, 232, 36, 0.991);
+            position: absolute;
+            border: 2px solid black;
+           /* font-weight: bolder;*/
+        
+        }
+        .front{
+            background: orangered;
+            transform: translateZ(100px);
+        }
+        .back{
+            background: red;
+            transform: rotateY(3600deg) translateZ(100px);
+        }
+        .right{
+            background: rgb(239, 55, 116);
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        .left{
+            background: rgb(5, 181, 212);
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+        .top{
+            background: green;
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        .bottom{
+            background: yellow;
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+        @keyframes rotatecube{
+            from{
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            to{
+                transform: rotateX(360deg) rotatey(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cube">
+            <div class="face front">Front</div>
+            <div class="face back">Back</div>
+            <div class="face left">Left</div>
+            <div class="face right">Right</div>
+            <div class="face top">Top</div>
+            <div class="face bottom">Bottom</div>
+        </div>
+    </div>
+</body>
+</html>
