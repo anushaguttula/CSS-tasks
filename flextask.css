@@ -1,0 +1,102 @@
+header{
+    background-color: rgb(252, 74, 148);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+}
+a{
+    text-decoration: none;
+    margin: 10px;
+}
+a:hover{
+    border: 2px solid rgb(160, 50, 240);
+    border-radius: 5px;
+    color: white;
+    font-family: lucida handwrtting;
+}
+footer{
+    background-color: rgb(77, 172, 249);
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{ 
+    display: flex;
+    height: 70vh;
+    background-color: rgb(137, 238, 245);
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    justify-content: space-between;
+    width: 40vh;
+    align-items: center;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(225, 243, 106);
+}
+img{ 
+    margin-top: 10px;
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+.box1{
+    box-shadow: 0 0 10px rgb(52, 52, 52);
+    border: 2px solid black;
+    border-radius: 10px;
+    width:200px ;
+    height: 280px;
+    font-family: algerian;
+    text-align: center;
+    background-color: rgba(240, 238, 238, 0.434);
+    display: inline-block;
+}
+h4{
+    color: rgb(78, 23, 88);
+}
+.box2{
+    box-shadow: 0 0 10px rgb(52, 52, 52);
+    border: 2px solid black;
+    border-radius: 10px;
+    width:200px ;
+    height: 280px;
+    font-family: algerian;
+    text-align: center;
+    background-color: rgba(227, 225, 225, 0.386); 
+    display: inline-block;
+    margin: 15px;
+}
+.box3{
+    box-shadow: 0 0 10px rgb(52, 52, 52);
+    border: 2px solid black;
+    border-radius: 10px;
+    width:200px ;
+    height: 280px;
+    font-family: algerian;
+    text-align: center;
+    background-color: rgba(230, 228, 228, 0.546);
+    display: inline-block;
+}
+button{
+    height: 20px;
+    background-color: gold;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+}
+button:hover{
+    height:22px ;
+    box-shadow: 0 0 10px white;
+}
